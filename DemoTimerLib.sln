@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.757
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTimerLib.CommandHandler", "DemoTimerLib\DemoTimerLib.CommandHandler\DemoTimerLib.CommandHandler.csproj", "{D45D59CB-7370-4F53-857C-6D765A034396}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DemoTimerLib.EventHandler", "DemoTimerLib\DemoTimerLib.EventHandler\DemoTimerLib.EventHandler.csproj", "{7EC6CBAE-59E9-443C-9AE6-709A4FBE39CC}"
+EndProject
+Project("{DA7C07C8-D9F3-4A79-840F-611D1C5950A5}") = "DemoTimerLib.Installer", "DemoTimerLib\DemoTimerLib.Installer\DemoTimerLib.Installer.iproj", "{70839D23-810C-4AAD-B907-7C5D70888240}"
+EndProject
+Project("{A412FA11-93F1-45AA-BF1D-D6DE2D0318E4}") = "DemoTimerLib.MSModel", "DemoTimerLib\DemoTimerLib.MSModel\DemoTimerLib.MSModel.umproj", "{1C66AEB6-915E-4D24-93C8-ED43F362248E}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{3708A622-5434-4C92-B1CD-69EDE4E26ADB}"
+	ProjectSection(SolutionItems) = preProject
+		packages.reference = packages.reference
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D45D59CB-7370-4F53-857C-6D765A034396}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D45D59CB-7370-4F53-857C-6D765A034396}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D45D59CB-7370-4F53-857C-6D765A034396}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D45D59CB-7370-4F53-857C-6D765A034396}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7EC6CBAE-59E9-443C-9AE6-709A4FBE39CC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7EC6CBAE-59E9-443C-9AE6-709A4FBE39CC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7EC6CBAE-59E9-443C-9AE6-709A4FBE39CC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7EC6CBAE-59E9-443C-9AE6-709A4FBE39CC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70839D23-810C-4AAD-B907-7C5D70888240}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70839D23-810C-4AAD-B907-7C5D70888240}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70839D23-810C-4AAD-B907-7C5D70888240}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70839D23-810C-4AAD-B907-7C5D70888240}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1C66AEB6-915E-4D24-93C8-ED43F362248E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1C66AEB6-915E-4D24-93C8-ED43F362248E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1C66AEB6-915E-4D24-93C8-ED43F362248E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1C66AEB6-915E-4D24-93C8-ED43F362248E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {268861AA-4E50-4062-84F0-4793E0CBDF23}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,6 @@
+VERSION '01.12'
+
+[Reliable]
+[@Guid(aeda392e-b4ca-4a52-b159-c858ddb6de21)]
+EVENTHANDLER PeriodicTimerTestEventHandler LINKED TO Siemens.SimaticIT.SystemData.Foundation.Events.TimerEvent
+

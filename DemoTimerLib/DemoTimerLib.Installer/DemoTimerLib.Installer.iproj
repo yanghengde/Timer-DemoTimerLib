@@ -1,0 +1,77 @@
+﻿<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>70839d23-810c-4aad-b907-7c5d70888240</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Siemens.Mom.Presales.Training.DemoTimerLib.Installer</RootNamespace>
+    <AssemblyName>Siemens.Mom.Presales.Training.DemoTimerLib.Installer</AssemblyName>
+    <Name>DemoTimerLib.Installer</Name>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FunctionalBlockType>Library</FunctionalBlockType>
+    <FunctionalBlockVersion>01.00.04</FunctionalBlockVersion>
+    <FunctionalBlockName>DemoTimerLib</FunctionalBlockName>
+    <FunctionalBlockPrefix>Siemens.Mom.Presales.Training</FunctionalBlockPrefix>
+    <FunctionalBlockModels>Siemens.Mom.Presales.Training.MasterData.DemoTimerLib.MSModel</FunctionalBlockModels>
+    <FunctionalBlockDescription>
+    </FunctionalBlockDescription>
+    <SitPlatformVersion>3.0</SitPlatformVersion>
+    <AutoDeployPackage>True</AutoDeployPackage>
+    <CanBeExtended>False</CanBeExtended>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU'  ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Debug\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\Release\</OutputPath>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="ExternalDependencies" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.DemoTimerLib.Dbinit.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.DemoTimerLib.References.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Config\Siemens.Mom.Presales.Training.DemoTimerLib.ApplicationLog.en-US.xml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DemoTimerLib.CommandHandler\DemoTimerLib.CommandHandler.csproj">
+      <Name>DemoTimerLib.CommandHandler</Name>
+      <Project>{d45d59cb-7370-4f53-857c-6d765a034396}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoTimerLib.EventHandler\DemoTimerLib.EventHandler.csproj">
+      <Name>DemoTimerLib.EventHandler</Name>
+      <Project>{7ec6cbae-59e9-443c-9ae6-709a4fbe39cc}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\DemoTimerLib.MSModel\DemoTimerLib.MSModel.umproj">
+      <Name>DemoTimerLib.MSModel</Name>
+      <Project>{1c66aeb6-915e-4d24-93c8-ed43f362248e}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(SITUnifiedVSToolingPlatformBin)\Siemens.SimaticIt.Build.Installer.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

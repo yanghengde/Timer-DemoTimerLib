@@ -1,0 +1,9 @@
+VERSION '01.12'
+
+[Protected]
+[@Guid(a9b33dc4-bf5a-4e2a-a0b1-45de6d74ecaf)]
+COMMAND CreatePeriodicTimer
+RESPONSE
+    [Optional]
+    Id AS Guid
+
